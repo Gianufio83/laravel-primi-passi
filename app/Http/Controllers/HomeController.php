@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index() {
-        $data = [
+        $cd = [
        [
           'title' => 'New Jersey',
           'author' => 'Bon Jovi',
@@ -21,8 +21,8 @@ class HomeController extends Controller
         'poster' => 'https://images-na.ssl-images-amazon.com/images/I/71g40mlbinL._SX355_.jpg',
      ],
      [
-        'title' => 'Ten's Summoner's Tales',
-        'author' => 'Sting,
+        'title' => "Ten Summoner Tales",
+        'author' => 'Sting',
         'year' => '1993',
         'poster' => 'https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg',
      ],
@@ -44,8 +44,9 @@ class HomeController extends Controller
         'year' => '2002',
         'poster' => 'https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg',
      ],
-    ]
-    return view('cds', $data);
+    ];
+
+    return view('mycds',compact('cd'));
     }
     
 

@@ -1,5 +1,5 @@
 
-@extends('layout.pagina');
+@extends('layout.pagina')
 @section('content') 
 @foreach ($cd as $dischi)
 <div class="cd">

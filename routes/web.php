@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'HomeController@home') {
     return view('cds');
 });
